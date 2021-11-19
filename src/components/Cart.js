@@ -58,22 +58,20 @@ class Cart extends Component {
    
     return (
      <div className = "cart">
-          <h2>Cart</h2>
+          <h1>Cart</h1>
           <ul>
             {displayCart}
           </ul>
           
-          <h3>Subtotal: </h3>
-            {displaySubTotal}
+          <h2>Subtotal: {displaySubTotal} </h2>
+            
 
 
-          <h3>Tax: </h3>
+          <h2>Tax: {displayTax} </h2>
 
-            {displayTax}
+           
 
-          <h3>Total: </h3>
-
-          {displayTotal }
+          <h2>Total: {displayTotal }</h2>
 
           <form id ="checkout">
           <h2>Checkout</h2>

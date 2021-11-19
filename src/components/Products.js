@@ -38,11 +38,11 @@ class Products extends Component {
           const displayProduct = this.state.product.map((each) => {
             return (
             <div className = "product-card" key = {each.id} >
-                <h3>{each.name} </h3>
+                <h2>{each.name} </h2>
                 <p>{`Price: $${each.price.toFixed(2)}`}</p>
                 <button type = "submit" onClick ={this.addToCart} value ={[each.name, each.price]}>Add To Cart</button>
                 <img onClick ={this.handleItem} className="product-image" src={each.img} alt={each.id} />
-                <p>{each.description}</p>
+                <p className = "description">{each.description}</p>
             </div>
             )
         })
@@ -50,21 +50,21 @@ class Products extends Component {
         
     
           return (
+              
               <div className ="background">
 
-                    <h2 className = "title">My Garage Sale</h2>
                 <div className ="products">
-                    <div className = "product-container">
+            <h1 className = "title">My Garage Sale</h1>
+                   
+                   
                     {displayProduct}
-                    </div>
+                
                 </div>
-
                     <Cart list = {this.state.list}
                           total = {this.state.total}
                     />
-
-
               </div>
+            
           )
       }
 
