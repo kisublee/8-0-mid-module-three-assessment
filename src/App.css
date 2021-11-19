@@ -1,1 +1,18 @@
 
+.products {
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+}
+
+.product-container {
+    display: grid;
+    grid-column: span 1;
+    grid-template-columns: 1fr 1fr;
+}
+.product-card {
+    grid-column: span 1;
+}
+
+.cart {
+    grid-column: span 1;
+}
