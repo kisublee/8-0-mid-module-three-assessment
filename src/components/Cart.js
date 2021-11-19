@@ -57,7 +57,7 @@ class Cart extends Component {
 
    
     return (
-      <body className ="cart">
+     <div className = "cart">
           <h2>Cart</h2>
           <ul>
             {displayCart}
@@ -84,8 +84,7 @@ class Cart extends Component {
               id="firstName"
               name="firstName"
               value={this.state.firstName}
-              onChange={this.handleChange}
-              />
+              onChange={this.handleChange}/>
 
               <label htmlFor="lastName">Last Name</label>
               <input
@@ -119,9 +118,9 @@ class Cart extends Component {
                value={this.state.zipCode}
                onChange={this.handleChange}/>
 
-              <submit onClick = {this.submitForm}>Buy Now</submit>
+              <button onClick = {this.submitForm}>Buy Now</button>
           </form>
-      </body>
+          </div>
     )
     }
 }
